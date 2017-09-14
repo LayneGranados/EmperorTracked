@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tabs_profile"
+        title="@string/tab_profile"
+        icon="@drawable/ic_action_user_white"
+        barColorWhenSelected="@color/colorPrimaryDark"/>
+    <tab
+        id="@+id/tabs_health"
+        title="@string/tab_health"
+        icon="@drawable/ic_action_book_white"
+        barColorWhenSelected="@color/colorPrimaryDark" />
+    <tab
+        id="@+id/tabs_alarms"
+        title="@string/tab_alarms"
+        icon="@drawable/ic_action_alarm_white"
+        barColorWhenSelected="@color/colorPrimaryDark" />
+</tabs>

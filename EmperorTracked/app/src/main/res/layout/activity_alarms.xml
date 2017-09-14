@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.emperor_tracare.emperortracked.AlarmsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar_layout_activity_alarms"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbarlayout_height"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/container_creation_alarms_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/colorDividerSecond">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <TimePicker
+                    android:id="@+id/time_picker_create_alarm"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:timePickerMode="spinner"
+                    android:numbersTextColor="@android:color/black">
+                </TimePicker>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/days"
+                android:textSize="@dimen/days_textsize"
+                android:textStyle="bold"
+                android:padding="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox_selector_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector_lunes" />
+                <CheckBox
+                    android:id="@+id/checkbox_selector_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector_martes"
+                    android:layout_marginLeft="@dimen/days_separator"/>
+                <CheckBox
+                    android:id="@+id/checkbox_selector_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector_miercoles"
+                    android:layout_marginLeft="@dimen/days_separator"/>
+                <CheckBox
+                    android:id="@+id/checkbox_selector_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector_jueves"
+                    android:layout_marginLeft="@dimen/days_separator"/>
+                <CheckBox
+                    android:id="@+id/checkbox_selector_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector_viernes"
+                    android:layout_marginLeft="@dimen/days_separator"/>
+                <CheckBox
+                    android:id="@+id/checkbox_selector_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector_sabado"
+                    android:layout_marginLeft="@dimen/days_separator"/>
+                <CheckBox
+                    android:id="@+id/checkbox_selector_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector_domingo"
+                    android:layout_marginLeft="@dimen/days_separator"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextBlack"
+                android:layout_marginLeft="@dimen/days_separator"
+                android:layout_marginRight="@dimen/days_separator">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/textview_alarm_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_create_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/create_alarm"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_textSize"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/button_padding_right_left"
+                android:paddingRight="@dimen/button_padding_right_left"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/roundedbuttonnoborder"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorDividerSecond"
+    tools:context="com.emperor_tracare.emperortracked.StartFisicalActivitiesActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar_layout_activity_alarms"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbarlayout_height"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/choose_and_activity"
+                    android:textSize="@dimen/textsize_start_new_activities"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/margin_top_bottom_name_start_activities"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_top_bottom_name_start_activities"
+                    android:layout_marginBottom="@dimen/margin_top_bottom_name_start_activities">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_images_next_back_start_activity"
+                        android:layout_height="@dimen/size_images_next_back_start_activity"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/ic_chevron_left"
+                        android:layout_marginRight="@dimen/margin_separator_next_back_images"/>
+
+                    <ImageView
+                        android:id="@+id/imageview_running"
+                        android:layout_width="@dimen/size_images_activity"
+                        android:layout_height="@dimen/size_images_activity"
+                        android:layout_gravity="center_vertical|right"
+                        android:src="@drawable/ic_activity_exercise"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/size_images_next_back_start_activity"
+                        android:layout_height="@dimen/size_images_next_back_start_activity"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_chevron_right"
+                        android:layout_marginLeft="@dimen/margin_separator_next_back_images"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Running"
+                    android:textSize="@dimen/textsize_start_new_activities"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_top_bottom_name_start_activities"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <Chronometer
+                android:id="@+id/chronometer_fisical_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:countDown="false"
+                android:textSize="150dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ToggleButton
+                android:id="@+id/button_start_chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textOff="Start"
+                android:textOn="Pause"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_textSize"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:paddingTop="@dimen/button_padding_top_bottom"
+                android:paddingBottom="@dimen/button_padding_top_bottom"
+                android:paddingLeft="@dimen/button_padding_right_left"
+                android:paddingRight="@dimen/button_padding_right_left"
+                android:background = "@drawable/roundedbutton"/>
+
+            <ToggleButton
+                android:id="@+id/button_stop_chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:textOff="Stop"
+                android:textOn="Add Activity"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_textSize"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:paddingTop="@dimen/button_padding_top_bottom"
+                android:paddingBottom="@dimen/button_padding_top_bottom"
+                android:paddingLeft="@dimen/button_padding_right_left"
+                android:paddingRight="@dimen/button_padding_right_left"
+                android:background = "@drawable/roundedbutton"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

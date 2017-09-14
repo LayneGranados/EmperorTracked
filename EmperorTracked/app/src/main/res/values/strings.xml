@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Emperor Tracked</string>
+    <string name="text_forgot_your_password"><u>Olvidaste tu contraseña?</u></string>
+    <string name="text_button_login">Iniciar Sesión</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_username">Nombre de Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirm_password">Confirmar Contraseña</string>
+    <string name="hint_email">Correo Electronico</string>
+    <string name="hint_hash_code">Ingrese el Hash Code</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="action_settings">Configuracion</string>
+    <string name="configuracion">Configuración</string>
+
+    <string name="tab_profile">Perfil</string>
+    <string name="tab_health">Salud</string>
+    <string name="tab_alarms">Alarmas</string>
+    <string name="tab_map">Mapa</string>
+    <string name="title_navigation_drawer_activity"> </string>
+    <string name="title_sign_up_activity">Create una Cuenta</string>
+    <string name="empty_space"> </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guardar">Guardar</string>
+    <string name="sing_up">Registro</string>
+    <string name="update">Actualizar</string>
+    <string name="age">Edad:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add">Agregar</string>
+    <string name="close">Cerrar</string>
+    <string name="acept">Aceptar</string>
+    <string name="title_activity_person_tracked_container">PersonTrackedContainerActivity</string>
+    <string name="on">Activado</string>
+    <string name="off">Desactivado</string>
+    <string name="update_information">Actualizar Información</string>
+    <string name="create_alarm">Crear Alarma</string>
+
+    <string name="text_weight">Peso</string>
+    <string name="text_footsteps">Pasos</string>
+    <string name="disclaimer_bpm">60bpm recomendado</string>
+    <string name="disclaimer_sleep">Anoche</string>
+    <string name="check_records">Ver historial</string>
+
+    <string name="check_fisical_activities">Ver Actividades Físicas</string>
+    <string name="days">Días</string>
+    <string name="monday">L</string>
+    <string name="tuesday">M</string>
+    <string name="wednesday">MR</string>
+    <string name="thursday">J</string>
+    <string name="friday">V</string>
+    <string name="saturday">S</string>
+    <string name="sunday">D</string>
+    <string name="login_incorrect">Usuario o contraseña incorrecta, intente nuevamente por favor</string>
+    <string name="login_not_successful">Inicio de sesión incorrecto</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="disclaimer_no_alarms">En este momento no tienes alarmas</string>
+    <string name="click_here_to_create_one_alarm">Click aqui para crear una</string>
+    <string name="disclaimer_no_people_tracked">No tienes a nadie para supervisar</string>
+    <string name="click_here_to_add_someone">Click aqui para agregar a alguien</string>
+    <string name="congratulations">Felicitaciones!</string>
+    <string name="we_are_so_sorry">Lo sentimos!</string>
+    <string name="person_successfully_added">Has agregado a una persona exitosamente</string>
+    <string name="message_hashcode_incorrect">El HashCode no corresponde a nadie registrado ens Emperor TraCare</string>
+    <string name="title_activity_settings">Configuracion</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="devices">Dispositivos</string>
+    <string name="ver_mis_estad_sticas">Ver mis Estadísticas</string>
+    <string name="add_a_weight_record">Agregar peso</string>
+    <string name="write_your_weight">Escribe tu peso</string>
+    <string name="touch_penguin_to_take_a_photo">Toca al pinguino para tomar una foto</string>
+    <string name="choose_and_activity">Selecciciona una Actividad</string>
+</resources>

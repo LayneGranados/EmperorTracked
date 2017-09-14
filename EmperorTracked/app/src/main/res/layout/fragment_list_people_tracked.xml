@@ -1,0 +1,111 @@
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+android:id="@+id/coordinator_fragment_list_people_tracked"
+tools:context="com.emperor_tracare.emperortracked.fragments.ListTrackersFragment"
+android:background="@color/colorDividerSecond">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_fragment_no_people_tracked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryText"
+            android:text="Opps!"
+            android:textSize="@dimen/textview_alert_no_people"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="@dimen/imageview_size_penguin_no_eggs"
+            android:layout_height="@dimen/imageview_size_penguin_no_eggs"
+            android:src="@drawable/penguin1"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorSecondaryText"
+            android:text="@string/disclaimer_no_people_tracked"
+            android:textSize="@dimen/textView_secondary_textSize"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryText"
+            android:text="@string/click_here_to_add_someone"
+            android:textSize="@dimen/button_textSize"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5sp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floating_add_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_action_add_white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_fragment_list_people_tracked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/textView_important_message_list_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/button_textSize"
+            android:text="These are the people"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/button_textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_help_message_list_tracked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="who are currently tracking you"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/textView_secondary_textSize"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trackedPeopleListRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            app:spanCount="2" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

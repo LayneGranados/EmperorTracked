@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.emperor_tracare.emperortracked.PersonTrackedContainerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar_person_tracked_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbarlayout_height"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottombar_person_tracked"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottombar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="top|end"
+            app:bb_inActiveTabAlpha="0.6"
+            app:bb_activeTabAlpha="1"
+            app:bb_inActiveTabColor="@android:color/white"
+            app:bb_activeTabColor="@color/colorPrimary"
+            app:bb_badgesHideWhenActive="true"
+            android:layout_below="@id/appBar_person_tracked_container"
+            app:bb_tabXmlResource="@xml/upbar_tabs_person_tracked_detail"
+            app:bb_titleTextAppearance="@style/BottomBar.Up"
+            android:paddingBottom="0dp" />
+
+        <LinearLayout
+            android:id="@+id/container_person_tracked_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@android:color/white">
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_who_is_tracking_me"
+            android:title="Tracking me"
+            android:icon="@drawable/ic_people_white"/>
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_stats"
+            android:title="My Stats"
+            android:icon="@drawable/ic_action_document_white"/>
+    </group>
+</menu>

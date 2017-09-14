@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_people_tracked_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/textview_alarm_name_item_list_alarms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a pill"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_login_textsize_dontyouhave"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="2dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_service_detail_service_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_hour_number_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="6:30"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/hour_textSize"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_action_edit_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_monday_days_of_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/monday"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/button_textSize" />
+                <TextView
+                    android:id="@+id/textView_tuesday_days_of_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/tuesday"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/button_textSize" />
+                <TextView
+                    android:id="@+id/textView_wednesday_days_of_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/wednesday"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/button_textSize" />
+                <TextView
+                    android:id="@+id/textView_thursday_days_of_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/thursday"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/button_textSize" />
+                <TextView
+                    android:id="@+id/textView_friday_days_of_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/friday"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/button_textSize" />
+                <TextView
+                    android:id="@+id/textView_saturday_days_of_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/saturday"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/button_textSize" />
+                <TextView
+                    android:id="@+id/textView_sunday_days_of_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="@string/sunday"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/button_textSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textOn="@string/on"
+                android:textOff="@string/off"
+                android:showText="false"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textView_secondary_textSize"
+                style="@android:style/Widget.Material.Light.CompoundButton.Switch"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

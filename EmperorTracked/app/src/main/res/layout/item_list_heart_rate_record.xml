@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_heart_rate_record_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/carview_item_list_heart_rate_record"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cardview_sleep_records"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/textView_day_heart_rate_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="@dimen/textview_margin_top"
+                    android:text="01"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/numbers_cardview_sleep_records" />
+
+                <TextView
+                    android:id="@+id/textView_month_heart_rate_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="JUN"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/numbers_cardview_sleep_records"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_service_detail_service_divider"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDividerSecond"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/textView_description_heart_rate_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="Heart rate is fast"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/description_cardview_sleep_records" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/textView_value_heart_rate_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="157"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/numbers_cardview_sleep_records"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="bpm"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/description_cardview_sleep_records" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/fragment_profile">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_person_tracked_profile_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_fragment_devices">
+
+        <TextView
+            android:id="@+id/textView_username_person_tracked_profile_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/devices"
+            android:textSize="@dimen/textview_text_size_username_profile"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_top_profile_information_text">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageview_device1_person_tracked_device"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_devices_other_black" />
+                    <TextView
+                        android:id="@+id/textView_smartwatch_person_tracked_profile_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSecondaryText"
+                        android:text="SmarthWatch"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_battery_smartwatch_person_tracked_profile_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorSecondaryText"
+                        android:text="90%"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/textview_text_size_personal_information_profile"
+                        android:textStyle="bold"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/ic_battery_90_black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_service_detail_service_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@color/colorDividerSecond"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp" />
+</merge>
